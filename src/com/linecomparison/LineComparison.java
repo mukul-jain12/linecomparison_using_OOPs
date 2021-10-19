@@ -33,11 +33,15 @@ public class LineComparison {
 	    Integer dis2 = (int) Math.sqrt((x4-x3)*(x4-x3) + (y4-y3)*(y4-y3));
 	    System.out.println("distance between"+"("+x1+","+y1+"),"+"("+x2+","+y2+") is : "+dis2);
 
-		if(dis1.equals(dis2))			//(length_line1.equals(length_line2))
-			System.out.println("Both line 1 nad 2 have same length of " + dis1);
-		else
-			System.out.println("Both have different length");
+		//(dis1.equals(dis2))
+		int res = dis1.compareTo(dis2);
 		
-		scanner.close();
+		//comparing line
+		if(res < 0)
+			System.out.println("Line 1 is smaller than Line 2.");
+		else if(res > 0)
+			System.out.println("Line 1 is greater than Line 2.");
+		else
+			System.out.println("Line 1 is equals to the Line 2.");
 	}
 }
