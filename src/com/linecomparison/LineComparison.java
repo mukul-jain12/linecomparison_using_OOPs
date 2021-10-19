@@ -18,8 +18,8 @@ public class LineComparison {
 		int x2 = scanner.nextInt();
 		int y2 = scanner.nextInt();
 		
-		Integer dis1 = (int)Math.sqrt((x2-x1)*(x2-x1) + (y2-y1)*(y2-y1));
-		System.out.println("distance between"+"("+x1+","+y1+"),"+"("+x2+","+y2+") is : "+dis1);
+		Integer lengthOfLine1 = (int)Math.sqrt((x2-x1)*(x2-x1) + (y2-y1)*(y2-y1));
+		System.out.println("distance between"+"("+x1+","+y1+"),"+"("+x2+","+y2+") is : "+lengthOfLine1);
 		
 		System.out.println("Enter co-ordinates for a line 2: ");
 	    System.out.println("Enter the value of x1 and y1:");
@@ -30,11 +30,11 @@ public class LineComparison {
 	    int x4 = scanner.nextInt();
 	    int y4 = scanner.nextInt();
 	
-	    Integer dis2 = (int) Math.sqrt((x4-x3)*(x4-x3) + (y4-y3)*(y4-y3));
-	    System.out.println("distance between"+"("+x1+","+y1+"),"+"("+x2+","+y2+") is : "+dis2);
+	    Integer lengthOfLine2 = (int) Math.sqrt((x4-x3)*(x4-x3) + (y4-y3)*(y4-y3));
+	    System.out.println("distance between"+"("+x1+","+y1+"),"+"("+x2+","+y2+") is : "+lengthOfLine2);
 
-		//(dis1.equals(dis2))
-		int res = dis1.compareTo(dis2);
+		//(lengthOfLine1.compareTo(lengthOfLine2))
+		int res = lengthOfLine1.compareTo(lengthOfLine2);
 		
 		//comparing line
 		if(res < 0)
