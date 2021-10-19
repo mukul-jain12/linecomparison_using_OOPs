@@ -18,8 +18,8 @@ public class LineComparison {
 		int x2 = scanner.nextInt();
 		int y2 = scanner.nextInt();
 		
-		double dis = Math.sqrt((x2-x1)*(x2-x1) + (y2-y1)*(y2-y1));
-		System.out.println("distance between"+"("+x1+","+y1+"),"+"("+x2+","+y2+") is : "+dis);
+		double lengthOFLine = Math.sqrt((x2-x1)*(x2-x1) + (y2-y1)*(y2-y1));
+		System.out.println("lengthOFLinetance between"+"("+x1+","+y1+"),"+"("+x2+","+y2+") is : "+lengthOFLine);
 		
 		scanner.close();
 	}
